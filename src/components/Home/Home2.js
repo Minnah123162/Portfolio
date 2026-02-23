@@ -8,45 +8,68 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
+          {/* LEFT SIDE — TEXT */}
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
+
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a Front-End focused Software Engineering Trainee with a B.Tech in
+              Information Technology. I enjoy building modern, responsive web
+              applications that deliver intuitive user experiences.
               <br />
               <br />
-              I’m proficient in
+              My recent prominent project is the
+              <b className="purple">
+                {" "}
+                EduCore — School Management ERP System
+              </b>
+              , a fully client-side application built using
+              <b className="purple"> JavaScript (ES6+), HTML, and CSS </b>
+              with role-based dashboards for Admin, Teacher, and Parent.
+              It uses
+              <b className="purple"> Cookies for session management </b> and
+              <b className="purple"> LocalStorage as a persistent database</b>.
+              <br />
+              <br />
+              I am proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  React.js, JavaScript, HTML5, CSS3, SCSS, Tailwind CSS{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              and have Fundamental Knowledge in React ecosystem including
+              Hooks, Context API, and component-based architecture.
               <br />
               <br />
-              My key areas of interest include developing
+              I also have knowledge of
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Node.js, SQL, Python, and Flask{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              along with REST API integration and asynchronous programming.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              Some of my other projects include
+              <b className="purple">
+                {" "}
+                Green Gamify — Waste Awareness Game
+              </b>{" "}
+              and
+              <b className="purple">
+                {" "}
+                FinTracker - Cookie Secure Finance Tracker
+              </b>
+              , showcasing the ability to design responsive interfaces and build
+              complete web solutions.
             </p>
           </Col>
+
+          {/* RIGHT SIDE — IMAGE */}
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
@@ -57,4 +80,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
