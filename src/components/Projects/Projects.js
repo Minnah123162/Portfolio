@@ -2,12 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import greenGamify from "../../Assets/Projects/greenGamify.png";
+import eduCore from "../../Assets/Projects/eduCore.png"
 
 function Projects() {
   return (
@@ -23,12 +19,23 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath=""
+              imgPath={eduCore}
               isBlog={false}
               title="Educore"
               description="School ERP system for managing academic workflows across Admin, Teacher, Student, and Parent roles. Built using JavaScript, HTML, and CSS with Cookies and LocalStorage for session and data management. Supports attendance tracking, exam and result processing, fee management, subject allocation, and timetable scheduling through role-based dashboards."
               ghLink="https://github.com/Minnah123162/EduCore-School-Management-System-Vanilla-JavaScript-ERP-"
               demoLink="https://drive.google.com/drive/folders/1Qx2DnQySEhyufDl076qjWDGtughF_3E1?usp=drive_link"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={greenGamify}
+              isBlog={false}
+              title="GreenGamify"
+              description="Web-based educational game designed to raise awareness about waste management by challenging players to identify and sort different waste types correctly. Provides engaging gameplay with informative feedback, responsive design, and dynamic interactions. Built using JavaScript, HTML, CSS, and Firebase."
+              ghLink="https://github.com/Minnah123162/waste-management-game"
+              demoLink="https://drive.google.com/drive/folders/1_PexnRB9fK1ZQA9UWDPGXquTdLxmOjKh?usp=sharing"
             />
           </Col>
 
@@ -53,16 +60,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath=""
-              isBlog={false}
-              title="GreenGamify"
-              description="Web-based educational game designed to raise awareness about waste management by challenging players to identify and sort different waste types correctly. Provides engaging gameplay with informative feedback, responsive design, and dynamic interactions. Built using JavaScript, HTML, CSS, and Firebase."
-              ghLink="https://github.com/Minnah123162/waste-management-game"
-              demoLink=""
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
