@@ -28,7 +28,7 @@ function Projects() {
               title="Educore"
               description="School ERP system for managing academic workflows across Admin, Teacher, Student, and Parent roles. Built using JavaScript, HTML, and CSS with Cookies and LocalStorage for session and data management. Supports attendance tracking, exam and result processing, fee management, subject allocation, and timetable scheduling through role-based dashboards."
               ghLink="https://github.com/Minnah123162/EduCore-School-Management-System-Vanilla-JavaScript-ERP-"
-              demoLink=""
+              demoLink="https://drive.google.com/drive/folders/1Qx2DnQySEhyufDl076qjWDGtughF_3E1?usp=drive_link"
             />
           </Col>
 
